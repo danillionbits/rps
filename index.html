@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<link rel="stylesheet" href="./style.css" />
+	<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+	<title>Rock Paper Scissor</title>
+</head>
+
+
+<body>
+	<section class="game">
+    <div class="score">
+      <div class="player-score">
+        <h3>Player</h3>
+        <p>0</p>
+      </div>
+      <div class="computer-score">
+        <h3>Computer</h3>
+        <p>0</p>
+      </div>
+    </div>
+
+    <h1>Rock &middot; Paper &middot; Scissor</h1>
+    <br/>
+    <div class="intro">
+      <h3>Whoever got the first three points wins the whole game</h3>
+      <br/> 
+      <button>
+        <p>Let's Play</p>
+      </button>
+    </div>
+
+    <div class="match fadeOut">
+      <h3 class="winner">Choose an option</h3>
+      <br/>
+      <div class="hands">
+        <img class="player-hand" src="./assets/rock.png" alt="" />
+        <img class="computer-hand" src="./assets/rock.png" alt="" />
+      </div>
+      <br/>
+      <div class="options">
+        <button class="rock"><p>Rock</p></button>
+        <button class="paper"><p>Paper</p></button>
+        <button class="scissors"><p>Scissor</p></button>
+      </div>
+    </div>
+
+    <div class="restart fadeOut">
+      <h3 class="result"></h3>
+      <br/> 
+      <button>
+        <p>Replay the game</p>
+      </button>
+    </div>
+  </section>
+
+  <script src="app.js"></script>
+
+</body>
+</html>
